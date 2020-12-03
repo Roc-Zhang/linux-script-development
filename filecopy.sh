@@ -1,4 +1,4 @@
-apt list |grep pip333 >>/dev/null
+apt list |grep pip3 >>/dev/null
 [ $? -ne 0 ] && sudo apt install python3-pip
 [ -d $HOME/temp ] || mkdir $HOME/temp 
 [ -f $HOME/temp/testfile ]  || dd if=/dev/zero of=$HOME/temp/testfile bs=1M count=1024
